@@ -1,0 +1,16 @@
+{{#if approved}}
+    <p>
+        Parabéns, seu cadastro foi aprovado!
+    </p>
+{{else}}
+    <p>O seu cadastro precisa de aprovação para acesso total do sistema!</p>
+{{/if}}
+<h1>Renderizando páginas utilizando Express Handlebars</h1>
+<p>O nome do uruário é {{user.name}} {{user.surname}} e ele tem {{user.age}} anos.</p>
+{{#if auth}}
+
+<p>
+    Você está autenticado, <a href="/dashboard">clique aqui</a> para acessar a área de membros.
+</p>
+
+{{/if}}
