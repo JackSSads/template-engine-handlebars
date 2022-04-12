@@ -98,8 +98,6 @@ app.get('/', (req, res) => {
     const approved = true;
 
     res.render('home', { user: user, palavra, auth, approved });
-})
-
-
+});
 
 app.listen(3000, () => { console.log("App roning in port: 3000") });
